@@ -6,7 +6,7 @@ num_pps = 8
 strips_per_pp = 8
 NUM_FEATHERS = 7
 
-global_scale = (1.0 / 10.5, 1.0 / 10.5)
+global_scale = (1.0, 1.0)
 global_translate = (0.0, 0.36)
 
 pp_map = [
