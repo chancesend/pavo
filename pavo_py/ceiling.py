@@ -61,6 +61,7 @@ def build_coord_list():
     led_list = []
     ceiling_list = [x for x in pp_map if x['type'] == 'ceiling']
     for ceiling in ceiling_list:
+        i = 0
         for side in ceiling['strip_sides']:
             strip_num = ceiling['strip_sides'][side]
             strip = ceiling_strips[side]['runs']
@@ -72,7 +73,12 @@ def build_coord_list():
                 global_ceiling_translation)
 
             sectionlist = [strip_num + 1 for x in this_side_coords]
-            subsectlist = [0 for x in this_side_coords]
+            subsectlist = []
+            for x in strip:
+                for y in range(x[0]):
+                    subsectlist.append(i)
+                i += 1
+            print(subsectlist)
             strip_dict = {
                 'pp': ceiling['pp'],
                 'strip': strip_num,
