@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="code/|data/" kind="src" path="PAVO"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="lib" path="PAVO/code/concurrent-locks-1.0.0.jar"/>
+	<classpathentry kind="lib" path="PAVO/code/core.jar"/>
+  <classpathentry kind="lib" path="PAVO/code/gson-2.3.jar"/>
+	<classpathentry kind="lib" path="PAVO/code/miglayout-core-5.0.jar"/>
+	<classpathentry kind="lib" path="PAVO/code/minim.jar"/>
+  <classpathentry kind="lib" path="PAVO/code/nrserial.jar"/>
+	<classpathentry kind="lib" path="PAVO/code/P3LX.jar"/>
+  <classpathentry kind="lib" path="PAVO/code/PixelPusher.jar"/>
+	<classpathentry kind="lib" path="PAVO/code/toxiclibscore.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
